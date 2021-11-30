@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://sat1:sat123@cluster0.mt6xo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Basic Configuration
 const port = process.env.PORT || 3000;
